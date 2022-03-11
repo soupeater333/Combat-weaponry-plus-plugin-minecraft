@@ -1,0 +1,833 @@
+# Message: This config file isn't completely finished yet (it is a work in progress)
+# Do /reload to make these changes happen in your server. (restarting it works too)
+# Once a newer version of this plugin is released, you may need to delete the old config file so a newer version can be generated.
+# Making a backup copy of this config file is recommended so you can keep track of any changes you make to it, and so you don't lose your changes if you ever delete it
+#
+# ENABLE OR DISABLE THE RESOURCE PACK==================================================================================
+# PUT TRUE OR FALSE
+ResourcePack: true
+#CHANGE THE RESOURCE PACK: (to change it, replace the link with your own link)
+PackLink: https://www.dropbox.com/s/1e5rf33dde7oisf/cwp%20texture%20pack%20v1.4.8.zip?dl=1
+#Original pack link for if you change it and want to know what the original is: https://www.dropbox.com/s/1e5rf33dde7oisf/cwp%20texture%20pack%20v1.4.8.zip?dl=1
+#
+# ENABLE OR DISABLE RECIPES============================================================================================
+# PUT TRUE OR FALSE
+# Armor
+Chainmail: true
+PlatedChainmail: true
+Emerald: true
+#the redstone chestplate makes weapons that need redstone no longer need redstone.
+RedstoneCore: true
+# Emerald Sword/Tools/Weapons
+EmeraldGear: true
+# Miscellaneous Items
+ChorusBlade: true
+ObsidianPickaxe: true
+FeatherCharm: true
+BlazeCharm: true
+EmeraldCharm: true
+GoldCharm: true
+StarCharm: true
+#really good sword is disabled on default because it is really good (it is a joke item)
+ReallyGoodSword: false
+# Weapons
+Knives: true
+Rapiers: true
+Katanas: true
+Scythes: true
+Longswords: true
+Spears: true
+Sabers: true
+#DualWieldSaberOnly true makes it so a saber can only be used in the offhand when also holding a saber in the main hand
+DualWieldSaberOnly: false
+# ENABLE OR DISABLE ALL PRISMARINE ARMOR/WEAPON RECIPES (true: enables, false: disables)
+Prismarine: true
+# Bows
+SwordBow: true
+HeavySwordBow: true
+Longbow: true
+Recurvebow: true
+Compoundbow: true
+RepeatingCrossbow: true
+LongswordBow: true
+BurstCrossbow: true
+RedstoneBow: true
+#Shields
+DiamondShield: true
+NetheriteShield: true
+#Enable or disable special items:======================================================================================
+#These items are disabled on default because some people might not like them.
+# the vessel is a sword that is a rare drop (1/100 chance) from wither skeletons
+# changing this setting to false will stop it from being dropped
+Vessel: false
+# the infused vessel is gained after killing a wither with a vessel
+# changing this setting to false will stop it from being gained
+InfusedVessel: false
+# the cursed vessel is gained after killing an ender dragon with a vessel
+# changing this setting to false will stop it from being gained
+CursedVessel: false
+#
+# EXPERIMENTAL ITEMS (these recipes will be disabled on default, put true to enable)===================================
+# The wither armor works but I am unsure if it is balanced or not
+WitherArmor: false
+Eelytra: false
+TridentBow: false
+JumpElytra: false
+#enable or disable wither skeleton bones (they will drop from wither skeletons)
+WitherBones: false
+# obtained by combining the infused and cursed vessels in a smithing table
+# the order of the vessels put in determines the outcome
+AwakenedVesselWhite: false
+AwakenedVesselPurple: false
+#
+# ENCHANTS=============================================================================================================
+# At the moment, you are unable to change which enchants are on the items, but you can change the level of enchants.
+EnchantmentsOnEmeraldArmor: true
+EmeraldArmorEnchantLevels:
+  Unbreaking: 10
+  Mending: 1
+#
+EnchantsOnEmeraldGear: true
+# THIS INCLUDES ALL EMERALD WEAPONS AND TOOLS
+EmeraldGearEnchantLevels:
+  Unbreaking: 10
+  Mending: 1
+#
+EnchantsChorusBlade: true
+ChorusEnchantLevels:
+  Unbreaking: 5
+  Knockback: 2
+#
+EnchantsSwordBow: true
+SbowEnchantLevels:
+  Smite: 5
+  Unbreaking: 3
+  Mending: 1
+#
+EnchantsHeavySwordBow: true
+HSbowEnchantLevels:
+  Smite: 5
+  Power: 3
+  Unbreaking: 5
+  Mending: 1
+#
+EnchantsPlatedChainmail: true
+PChainEnchantLevels:
+  Unbreaking: 5
+#
+EnchantsObsidianPick: true
+OPickEnchantLevels:
+  Unbreaking: 10
+#
+EnchantsDiamondShield: true
+DShieldEnchantLevels:
+  Unbreaking: 5
+#
+EnchantsNetheriteShield: true
+NShieldEnchantLevels:
+  Unbreaking: 10
+#CUSTOMIZE ITEM ATTRIBUTES (damage, attack speed, etc)==================================================================
+# (This is still a work in progress)
+EmeraldHelmet:
+  Armor: 2
+  BonusHealth: 1
+EmeraldChestplate:
+  Armor: 6
+  BonusHealth: 1
+EmeraldLeggings:
+  Armor: 5
+  BonusHealth: 1
+EmeraldBoots:
+  Armor: 2
+  BonusHealth: 1
+# MAKE NETHERITE WEAPONS REQUIRE INGOTS INSTEAD OF SCRAP TO CRAFT (in the recipe)=======================================================
+# PUT TRUE OR FALSE
+NetheriteIngots: false
+#
+# Customize item descriptions===========================================================================================
+# The &number (example: &6) in front of the text indicates the color of the text
+# You can search up minecraft color codes to see what the colors are
+# Changing the item attribute numbers will not do anything, it only changes what it says in the description
+#
+#The ones below are the ones I've gotten done so far
+#Scythes, Rapiers, Longswords, Knives, Spears, Katanas, Swords:
+PrismarineSword:
+  name: "&aPrismarine Sword"
+  line1: ""
+  line2: "&7When in Main Hand:"
+  line3: "&9 9 Attack Damage"
+  line4: "&9 1.6 Attack Speed"
+WoodenScythe:
+  name: "Wooden Scythe"
+  line1: ""
+  line2: "&6Two Handed"
+  line3: "&7- +50% damage if there is no item in offhand"
+  line4: "&6Cutting Edge"
+  line5: "&7- +50% damage to players"
+  line6: "&7  without a chestplate"
+  line7: ""
+  line8: "&7When in Main Hand:"
+  line9: "&9 7 Attack Damage"
+  line10: "&9 1 Attack Speed"
+StoneScythe:
+  name: "Stone Scythe"
+  line1: ""
+  line2: "&6Two Handed"
+  line3: "&7- +50% damage if there is no item in offhand"
+  line4: "&6Cutting Edge"
+  line5: "&7- +50% damage to players"
+  line6: "&7  without a chestplate"
+  line7: ""
+  line8: "&7When in Main Hand:"
+  line9: "&9 7.5 Attack Damage"
+  line10: "&9 1 Attack Speed"
+GoldScythe:
+  name: "Golden Scythe"
+  line1: ""
+  line2: "&6Two Handed"
+  line3: "&7- +50% damage if there is no item in offhand"
+  line4: "&6Cutting Edge"
+  line5: "&7- +50% damage to players"
+  line6: "&7  without a chestplate"
+  line7: ""
+  line8: "&7When in Main Hand:"
+  line9: "&9 7 Attack Damage"
+  line10: "&9 1.2 Attack Speed"
+EmeraldScythe:
+  name: "&2Emerald Scythe"
+  line1: ""
+  line2: "&6Two Handed"
+  line3: "&7- +50% damage if there is no item in offhand"
+  line4: "&6Cutting Edge"
+  line5: "&7- +50% damage to players"
+  line6: "&7  without a chestplate"
+  line7: ""
+  line8: "&7When in Main Hand:"
+  line9: "&9 8 Attack Damage"
+  line10: "&9 1.2 Attack Speed"
+IronScythe:
+  name: "Iron Scythe"
+  line1: ""
+  line2: "&6Two Handed"
+  line3: "&7- +50% damage if there is no item in offhand"
+  line4: "&6Cutting Edge"
+  line5: "&7- +50% damage to players"
+  line6: "&7  without a chestplate"
+  line7: ""
+  line8: "&7When in Main Hand:"
+  line9: "&9 8 Attack Damage"
+  line10: "&9 1 Attack Speed"
+DiamondScythe:
+  name: "Diamond Scythe"
+  line1: ""
+  line2: "&6Two Handed"
+  line3: "&7- +50% damage if there is no item in offhand"
+  line4: "&6Cutting Edge"
+  line5: "&7- +50% damage to players"
+  line6: "&7  without a chestplate"
+  line7: ""
+  line8: "&7When in Main Hand:"
+  line9: "&9 9 Attack Damage"
+  line10: "&9 1 Attack Speed"
+NetheriteScythe:
+  name: "Netherite Scythe"
+  line1: ""
+  line2: "&6Two Handed"
+  line3: "&7- +50% damage if there is no item in offhand"
+  line4: "&6Cutting Edge"
+  line5: "&7- +50% damage to players"
+  line6: "&7  without a chestplate"
+  line7: ""
+  line8: "&7When in Main Hand:"
+  line9: "&9 10 Attack Damage"
+  line10: "&9 1 Attack Speed"
+PrismarineScythe:
+  name: "&aPrismarine Scythe"
+  line1: ""
+  line2: "&6Two Handed"
+  line3: "&7- +50% damage if there is no item in offhand"
+  line4: "&6Cutting Edge"
+  line5: "&7- +50% damage to players"
+  line6: "&7  without a chestplate"
+  line7: ""
+  line8: "&7When in Main Hand:"
+  line9: "&9 11 Attack Damage"
+  line10: "&9 1 Attack Speed"
+WoodenRapier:
+  name: "Wooden Rapier"
+  line1: ""
+  line2: "&6Armor Piercing"
+  line3: "&7- +5% damage for each piece of armor"
+  line4: "&7   your opponent has"
+  line5: "&7   (stacks multiplicatively)"
+  line6: "&7- Disables shields for 2 seconds"
+  line7: ""
+  line8: "&7When in Main Hand:"
+  line9: "&9 3 Attack Damage"
+  line10: "&9 1.9 Attack Speed"
+StoneRapier:
+  name: "Stone Rapier"
+  line1: ""
+  line2: "&6Armor Piercing"
+  line3: "&7- +5% damage for each piece of armor"
+  line4: "&7   your opponent has"
+  line5: "&7   (stacks multiplicatively)"
+  line6: "&7- Disables shields for 2 seconds"
+  line7: ""
+  line8: "&7When in Main Hand:"
+  line9: "&9 3.5 Attack Damage"
+  line10: "&9 1.9 Attack Speed"
+GoldenRapier:
+  name: "Golden Rapier"
+  line1: ""
+  line2: "&6Armor Piercing"
+  line3: "&7- +5% damage for each piece of armor"
+  line4: "&7   your opponent has"
+  line5: "&7   (stacks multiplicatively)"
+  line6: "&7- Disables shields for 2 seconds"
+  line7: ""
+  line8: "&7When in Main Hand:"
+  line9: "&9 3 Attack Damage"
+  line10: "&9 2.4 Attack Speed"
+IronRapier:
+  name: "Iron Rapier"
+  line1: ""
+  line2: "&6Armor Piercing"
+  line3: "&7- +5% damage for each piece of armor"
+  line4: "&7   your opponent has"
+  line5: "&7   (stacks multiplicatively)"
+  line6: "&7- Disables shields for 2 seconds"
+  line7: ""
+  line8: "&7When in Main Hand:"
+  line9: "&9 4 Attack Damage"
+  line10: "&9 1.9 Attack Speed"
+EmeraldRapier:
+  name: "&2Emerald Rapier"
+  line1: ""
+  line2: "&6Armor Piercing"
+  line3: "&7- +5% damage for each piece of armor"
+  line4: "&7   your opponent has"
+  line5: "&7   (stacks multiplicatively)"
+  line6: "&7- Disables shields for 2 seconds"
+  line7: ""
+  line8: "&7When in Main Hand:"
+  line9: "&9 4 Attack Damage"
+  line10: "&9 2.4 Attack Speed"
+DiamondRapier:
+  name: "Diamond Rapier"
+  line1: ""
+  line2: "&6Armor Piercing"
+  line3: "&7- +5% damage for each piece of armor"
+  line4: "&7   your opponent has"
+  line5: "&7   (stacks multiplicatively)"
+  line6: "&7- Disables shields for 2 seconds"
+  line7: ""
+  line8: "&7When in Main Hand:"
+  line9: "&9 5 Attack Damage"
+  line10: "&9 1.9 Attack Speed"
+NetheriteRapier:
+  name: "Netherite Rapier"
+  line1: ""
+  line2: "&6Armor Piercing"
+  line3: "&7- +5% damage for each piece of armor"
+  line4: "&7   your opponent has"
+  line5: "&7   (stacks multiplicatively)"
+  line6: "&7- Disables shields for 2 seconds"
+  line7: ""
+  line8: "&7When in Main Hand:"
+  line9: "&9 6 Attack Damage"
+  line10: "&9 1.9 Attack Speed"
+PrismarineRapier:
+  name: "&aPrismarine Rapier"
+  line1: ""
+  line2: "&6Armor Piercing"
+  line3: "&7- +5% damage for each piece of armor"
+  line4: "&7   your opponent has"
+  line5: "&7   (stacks multiplicatively)"
+  line6: "&7- Disables shields for 2 seconds"
+  line7: ""
+  line8: "&7When in Main Hand:"
+  line9: "&9 7 Attack Damage"
+  line10: "&9 1.9 Attack Speed"
+WoodenLongsword:
+  name: "Wooden Longsword"
+  line1: ""
+  line2: "&6Two Handed"
+  line3: "&7- +50% damage if there is"
+  line4: "&7  no item in your offhand"
+  line5: ""
+  line6: "&7When in Main Hand:"
+  line7: "&9 5 Attack Damage"
+  line8: "&9 1.2 Attack Speed"
+StoneLongsword:
+  name: "Stone Longsword"
+  line1: ""
+  line2: "&6Two Handed"
+  line3: "&7- +50% damage if there is"
+  line4: "&7  no item in your offhand"
+  line5: ""
+  line6: "&7When in Main Hand:"
+  line7: "&9 6 Attack Damage"
+  line8: "&9 1.2 Attack Speed"
+GoldLongsword:
+  name: "Golden Longsword"
+  line1: ""
+  line2: "&6Two Handed"
+  line3: "&7- +50% damage if there is"
+  line4: "&7  no item in your offhand"
+  line5: ""
+  line6: "&7When in Main Hand:"
+  line7: "&9 5 Attack Damage"
+  line8: "&9 1.4 Attack Speed"
+IronLongsword:
+  name: "Iron Longsword"
+  line1: ""
+  line2: "&6Two Handed"
+  line3: "&7- +50% damage if there is"
+  line4: "&7  no item in your offhand"
+  line5: ""
+  line6: "&7When in Main Hand:"
+  line7: "&9 7 Attack Damage"
+  line8: "&9 1.2 Attack Speed"
+EmeraldLongsword:
+  name: "&2Emerald Longsword"
+  line1: ""
+  line2: "&6Two Handed"
+  line3: "&7- +50% damage if there is"
+  line4: "&7  no item in your offhand"
+  line5: ""
+  line6: "&7When in Main Hand:"
+  line7: "&9 7 Attack Damage"
+  line8: "&9 1.4 Attack Speed"
+DiamondLongsword:
+  name: "Diamond Longsword"
+  line1: ""
+  line2: "&6Two Handed"
+  line3: "&7- +50% damage if there is"
+  line4: "&7  no item in your offhand"
+  line5: ""
+  line6: "&7When in Main Hand:"
+  line7: "&9 8 Attack Damage"
+  line8: "&9 1.2 Attack Speed"
+NetheriteLongsword:
+  name: "Netherite Longsword"
+  line1: ""
+  line2: "&6Two Handed"
+  line3: "&7- +50% damage if there is"
+  line4: "&7  no item in your offhand"
+  line5: ""
+  line6: "&7When in Main Hand:"
+  line7: "&9 9 Attack Damage"
+  line8: "&9 1.2 Attack Speed"
+PrismarineLongsword:
+  name: "&aPrismarine Longsword"
+  line1: ""
+  line2: "&6Two Handed"
+  line3: "&7- +50% damage if there is"
+  line4: "&7  no item in your offhand"
+  line5: ""
+  line6: "&7When in Main Hand:"
+  line7: "&9 10 Attack Damage"
+  line8: "&9 1.2 Attack Speed"
+WoodenKnife:
+  name: "Wooden Knife"
+  line1: ""
+  line2: "&6Cutting Edge"
+  line3: "&7- +100% damage to players without a chestplate"
+  line4: "&6Combo"
+  line5: "&7- Getting 3 consecutive hits gives strength I"
+  line6: ""
+  line7: "&7When in Main Hand:"
+  line8: "&9 2 Attack Damage"
+  line9: "&9 3 Attack Speed"
+StoneKnife:
+  name: "Stone Knife"
+  line1: ""
+  line2: "&6Cutting Edge"
+  line3: "&7- +100% damage to players without a chestplate"
+  line4: "&6Combo"
+  line5: "&7- Getting 3 consecutive hits gives strength I"
+  line6: ""
+  line7: "&7When in Main Hand:"
+  line8: "&9 2.5 Attack Damage"
+  line9: "&9 3 Attack Speed"
+GoldKnife:
+  name: "Golden Knife"
+  line1: ""
+  line2: "&6Cutting Edge"
+  line3: "&7- +100% damage to players without a chestplate"
+  line4: "&6Combo"
+  line5: "&7- Getting 3 consecutive hits gives strength I"
+  line6: ""
+  line7: "&7When in Main Hand:"
+  line8: "&9 2 Attack Damage"
+  line9: "&9 4 Attack Speed"
+IronKnife:
+  name: "Iron Knife"
+  line1: ""
+  line2: "&6Cutting Edge"
+  line3: "&7- +100% damage to players without a chestplate"
+  line4: "&6Combo"
+  line5: "&7- Getting 3 consecutive hits gives strength I"
+  line6: ""
+  line7: "&7When in Main Hand:"
+  line8: "&9 3 Attack Damage"
+  line9: "&9 3 Attack Speed"
+EmeraldKnife:
+  name: "&2Emerald Knife"
+  line1: ""
+  line2: "&6Cutting Edge"
+  line3: "&7- +100% damage to players without a chestplate"
+  line4: "&6Combo"
+  line5: "&7- Getting 3 consecutive hits gives strength I"
+  line6: ""
+  line7: "&7When in Main Hand:"
+  line8: "&9 3 Attack Damage"
+  line9: "&9 4 Attack Speed"
+DiamondKnife:
+  name: "Diamond Knife"
+  line1: ""
+  line2: "&6Cutting Edge"
+  line3: "&7- +100% damage to players without a chestplate"
+  line4: "&6Combo"
+  line5: "&7- Getting 3 consecutive hits gives strength I"
+  line6: ""
+  line7: "&7When in Main Hand:"
+  line8: "&9 4 Attack Damage"
+  line9: "&9 3 Attack Speed"
+NetheriteKnife:
+  name: "Netherite Knife"
+  line1: ""
+  line2: "&6Cutting Edge"
+  line3: "&7- +100% damage to players without a chestplate"
+  line4: "&6Combo"
+  line5: "&7- Getting 3 consecutive hits gives strength I"
+  line6: ""
+  line7: "&7When in Main Hand:"
+  line8: "&9 5 Attack Damage"
+  line9: "&9 3 Attack Speed"
+PrismarineKnife:
+  name: "&aPrismarine Knife"
+  line1: ""
+  line2: "&6Cutting Edge"
+  line3: "&7- +100% damage to players without a chestplate"
+  line4: "&6Combo"
+  line5: "&7- Getting 3 consecutive hits gives strength I"
+  line6: ""
+  line7: "&7When in Main Hand:"
+  line8: "&9 6 Attack Damage"
+  line9: "&9 3 Attack Speed"
+WoodenSpear:
+  name: "Wooden Spear"
+  line1: ""
+  line2: "&6Armor Piercing"
+  line3: "&7- +5% damage for each piece of armor"
+  line4: "&7   your opponent has"
+  line5: "&7   (stacks multiplicatively)"
+  line6: "&7- Disables shields for 1 second"
+  line7: "&6Two Handed"
+  line8: "&7- +50% damage if there is no item in offhand"
+  line9: ""
+  line10: "&7When in Main Hand:"
+  line11: "&9 2 Attack Damage"
+  line12: "&9 2.5 Attack Speed"
+StoneSpear:
+  name: "Stone Spear"
+  line1: ""
+  line2: "&6Armor Piercing"
+  line3: "&7- +5% damage for each piece of armor"
+  line4: "&7   your opponent has"
+  line5: "&7   (stacks multiplicatively)"
+  line6: "&7- Disables shields for 1 second"
+  line7: "&6Two Handed"
+  line8: "&7- +50% damage if there is no item in offhand"
+  line9: ""
+  line10: "&7When in Main Hand:"
+  line11: "&9 2.5 Attack Damage"
+  line12: "&9 2.5 Attack Speed"
+GoldenSpear:
+  name: "Golden Spear"
+  line1: ""
+  line2: "&6Armor Piercing"
+  line3: "&7- +5% damage for each piece of armor"
+  line4: "&7   your opponent has"
+  line5: "&7   (stacks multiplicatively)"
+  line6: "&7- Disables shields for 1 second"
+  line7: "&6Two Handed"
+  line8: "&7- +50% damage if there is no item in offhand"
+  line9: ""
+  line10: "&7When in Main Hand:"
+  line11: "&9 2 Attack Damage"
+  line12: "&9 2.8 Attack Speed"
+IronSpear:
+  name: "Iron Spear"
+  line1: ""
+  line2: "&6Armor Piercing"
+  line3: "&7- +5% damage for each piece of armor"
+  line4: "&7   your opponent has"
+  line5: "&7   (stacks multiplicatively)"
+  line6: "&7- Disables shields for 1 second"
+  line7: "&6Two Handed"
+  line8: "&7- +50% damage if there is no item in offhand"
+  line9: ""
+  line10: "&7When in Main Hand:"
+  line11: "&9 3 Attack Damage"
+  line12: "&9 2.5 Attack Speed"
+EmeraldSpear:
+  name: "Emerald Spear"
+  line1: ""
+  line2: "&6Armor Piercing"
+  line3: "&7- +5% damage for each piece of armor"
+  line4: "&7   your opponent has"
+  line5: "&7   (stacks multiplicatively)"
+  line6: "&7- Disables shields for 1 second"
+  line7: "&6Two Handed"
+  line8: "&7- +50% damage if there is no item in offhand"
+  line9: ""
+  line10: "&7When in Main Hand:"
+  line11: "&9 3 Attack Damage"
+  line12: "&9 2.8 Attack Speed"
+DiamondSpear:
+  name: "Diamond Spear"
+  line1: ""
+  line2: "&6Armor Piercing"
+  line3: "&7- +5% damage for each piece of armor"
+  line4: "&7   your opponent has"
+  line5: "&7   (stacks multiplicatively)"
+  line6: "&7- Disables shields for 1 second"
+  line7: "&6Two Handed"
+  line8: "&7- +50% damage if there is no item in offhand"
+  line9: ""
+  line10: "&7When in Main Hand:"
+  line11: "&9 4 Attack Damage"
+  line12: "&9 2.5 Attack Speed"
+NetheriteSpear:
+  name: "Netherite Spear"
+  line1: ""
+  line2: "&6Armor Piercing"
+  line3: "&7- +5% damage for each piece of armor"
+  line4: "&7   your opponent has"
+  line5: "&7   (stacks multiplicatively)"
+  line6: "&7- Disables shields for 1 second"
+  line7: "&6Two Handed"
+  line8: "&7- +50% damage if there is no item in offhand"
+  line9: ""
+  line10: "&7When in Main Hand:"
+  line11: "&9 5 Attack Damage"
+  line12: "&9 2.5 Attack Speed"
+PrismarineSpear:
+  name: "Prismarine Spear"
+  line1: ""
+  line2: "&6Armor Piercing"
+  line3: "&7- +5% damage for each piece of armor"
+  line4: "&7   your opponent has"
+  line5: "&7   (stacks multiplicatively)"
+  line6: "&7- Disables shields for 1 second"
+  line7: "&6Two Handed"
+  line8: "&7- +50% damage if there is no item in offhand"
+  line9: ""
+  line10: "&7When in Main Hand:"
+  line11: "&9 6 Attack Damage"
+  line12: "&9 2.5 Attack Speed"
+WoodenKatana:
+  name: "Wooden Katana"
+  line1: ""
+  line2: "&6Lightweight"
+  line3: "&7- Slightly increases"
+  line4: "&7  movement speed"
+  line5: "&6Two Handed"
+  line6: "&7- +50% damage if there is"
+  line7: "&7  no item in offhand"
+  line8: "&6Critical Hit"
+  line9: "&7- 20% chance to deal 10% more"
+  line10: "&7  damage when two handed"
+  line11: ""
+  line12: "&7When in Main Hand:"
+  line13: "&9 3.5 Attack Damage"
+  line14: "&9 1.7 Attack Speed"
+StoneKatana:
+  name: "Stone Katana"
+  line1: ""
+  line2: "&6Lightweight"
+  line3: "&7- Slightly increases"
+  line4: "&7  movement speed"
+  line5: "&6Two Handed"
+  line6: "&7- +50% damage if there is"
+  line7: "&7  no item in offhand"
+  line8: "&6Critical Hit"
+  line9: "&7- 20% chance to deal 10% more"
+  line10: "&7  damage when two handed"
+  line11: ""
+  line12: "&7When in Main Hand:"
+  line13: "&9 4 Attack Damage"
+  line14: "&9 1.7 Attack Speed"
+GoldenKatana:
+  name: "Golden Katana"
+  line1: ""
+  line2: "&6Lightweight"
+  line3: "&7- Slightly increases"
+  line4: "&7  movement speed"
+  line5: "&6Two Handed"
+  line6: "&7- +50% damage if there is"
+  line7: "&7  no item in offhand"
+  line8: "&6Critical Hit"
+  line9: "&7- 20% chance to deal 10% more"
+  line10: "&7  damage when two handed"
+  line11: ""
+  line12: "&7When in Main Hand:"
+  line13: "&9 3.5 Attack Damage"
+  line14: "&9 2 Attack Speed"
+IronKatana:
+  name: "Iron Katana"
+  line1: ""
+  line2: "&6Lightweight"
+  line3: "&7- Slightly increases"
+  line4: "&7  movement speed"
+  line5: "&6Two Handed"
+  line6: "&7- +50% damage if there is"
+  line7: "&7  no item in offhand"
+  line8: "&6Critical Hit"
+  line9: "&7- 20% chance to deal 10% more"
+  line10: "&7  damage when two handed"
+  line11: ""
+  line12: "&7When in Main Hand:"
+  line13: "&9 5 Attack Damage"
+  line14: "&9 1.7 Attack Speed"
+EmeraldKatana:
+  name: "Emerald Katana"
+  line1: ""
+  line2: "&6Lightweight"
+  line3: "&7- Slightly increases"
+  line4: "&7  movement speed"
+  line5: "&6Two Handed"
+  line6: "&7- +50% damage if there is"
+  line7: "&7  no item in offhand"
+  line8: "&6Critical Hit"
+  line9: "&7- 20% chance to deal 10% more"
+  line10: "&7  damage when two handed"
+  line11: ""
+  line12: "&7When in Main Hand:"
+  line13: "&9 5 Attack Damage"
+  line14: "&9 2 Attack Speed"
+DiamondKatana:
+  name: "Diamond Katana"
+  line1: ""
+  line2: "&6Lightweight"
+  line3: "&7- Slightly increases"
+  line4: "&7  movement speed"
+  line5: "&6Two Handed"
+  line6: "&7- +50% damage if there is"
+  line7: "&7  no item in offhand"
+  line8: "&6Critical Hit"
+  line9: "&7- 20% chance to deal 10% more"
+  line10: "&7  damage when two handed"
+  line11: ""
+  line12: "&7When in Main Hand:"
+  line13: "&9 6 Attack Damage"
+  line14: "&9 1.7 Attack Speed"
+NetheriteKatana:
+  name: "Netherite Katana"
+  line1: ""
+  line2: "&6Lightweight"
+  line3: "&7- Slightly increases"
+  line4: "&7  movement speed"
+  line5: "&6Two Handed"
+  line6: "&7- +50% damage if there is"
+  line7: "&7  no item in offhand"
+  line8: "&6Critical Hit"
+  line9: "&7- 20% chance to deal 10% more"
+  line10: "&7  damage when two handed"
+  line11: ""
+  line12: "&7When in Main Hand:"
+  line13: "&9 7 Attack Damage"
+  line14: "&9 1.7 Attack Speed"
+PrismarineKatana:
+  name: "Prismarine Katana"
+  line1: ""
+  line2: "&6Lightweight"
+  line3: "&7- Slightly increases"
+  line4: "&7  movement speed"
+  line5: "&6Two Handed"
+  line6: "&7- +50% damage if there is"
+  line7: "&7  no item in offhand"
+  line8: "&6Critical Hit"
+  line9: "&7- 20% chance to deal 10% more"
+  line10: "&7  damage when two handed"
+  line11: ""
+  line12: "&7When in Main Hand:"
+  line13: "&9 8 Attack Damage"
+  line14: "&9 1.7 Attack Speed"
+WoodenSaber:
+  name: "Wooden Saber"
+  line1: ""
+  line2: "&6Dual Wielding"
+  line3: "&7- Can be used in either hand"
+  line4: ""
+  line5: "&7When in Main Hand:"
+  line6: "&9 4 Attack Damage"
+  line7: "&9 1.6 Attack Speed"
+StoneSaber:
+  name: "Stone Saber"
+  line1: ""
+  line2: "&6Dual Wielding"
+  line3: "&7- Can be used in either hand"
+  line4: ""
+  line5: "&7When in Main Hand:"
+  line6: "&9 5 Attack Damage"
+  line7: "&9 1.6 Attack Speed"
+GoldSaber:
+  name: "Golden Saber"
+  line1: ""
+  line2: "&6Dual Wielding"
+  line3: "&7- Can be used in either hand"
+  line4: ""
+  line5: "&7When in Main Hand:"
+  line6: "&9 4 Attack Damage"
+  line7: "&9 1.6 Attack Speed"
+IronSaber:
+  name: "Iron Saber"
+  line1: ""
+  line2: "&6Dual Wielding"
+  line3: "&7- Can be used in either hand"
+  line4: ""
+  line5: "&7When in Main Hand:"
+  line6: "&9 6 Attack Damage"
+  line7: "&9 1.6 Attack Speed"
+EmeraldSaber:
+  name: "Emerald Saber"
+  line1: ""
+  line2: "&6Dual Wielding"
+  line3: "&7- Can be used in either hand"
+  line4: ""
+  line5: "&7When in Main Hand:"
+  line6: "&9 6 Attack Damage"
+  line7: "&9 1.6 Attack Speed"
+DiamondSaber:
+  name: "Diamond Saber"
+  line1: ""
+  line2: "&6Dual Wielding"
+  line3: "&7- Can be used in either hand"
+  line4: ""
+  line5: "&7When in Main Hand:"
+  line6: "&9 7 Attack Damage"
+  line7: "&9 1.6 Attack Speed"
+NetheriteSaber:
+  name: "Netherite Saber"
+  line1: ""
+  line2: "&6Dual Wielding"
+  line3: "&7- Can be used in either hand"
+  line4: ""
+  line5: "&7When in Main Hand:"
+  line6: "&9 8 Attack Damage"
+  line7: "&9 1.6 Attack Speed"
+PrismarineSaber:
+  name: "Prismarine Saber"
+  line1: ""
+  line2: "&6Dual Wielding"
+  line3: "&7- Can be used in either hand"
+  line4: ""
+  line5: "&7When in Main Hand:"
+  line6: "&9 9 Attack Damage"
+  line7: "&9 1.6 Attack Speed"
+# In a later update, I will try to add customizing lore and customizing weapon attributes. I probably can't add customizing the bonuses though because I don't know how I would do that.
+# BE SURE TO LET ME KNOW IF ANYTHING ISN'T WORKING RIGHT
